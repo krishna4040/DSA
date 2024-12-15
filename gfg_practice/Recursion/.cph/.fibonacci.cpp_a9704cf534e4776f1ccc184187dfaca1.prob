@@ -1,0 +1,1 @@
+{"name":"Local: fibonacci","url":"d:\\vs_code\\gfg_practice\\Recursion\\fibonacci.cpp","tests":[{"id":1678452666878,"input":"1","output":"1"},{"id":1678452694636,"input":"20","output":"6765"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\vs_code\\gfg_practice\\Recursion\\fibonacci.cpp","group":"local","local":true}

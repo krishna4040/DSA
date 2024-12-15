@@ -1,0 +1,1 @@
+{"name":"Local: bit_diff","url":"d:\\vs_code\\gfg_practice\\bit_magic\\bit_diff.cpp","tests":[{"id":1677681238644,"input":"10 20","output":"4"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\vs_code\\gfg_practice\\bit_magic\\bit_diff.cpp","group":"local","local":true}

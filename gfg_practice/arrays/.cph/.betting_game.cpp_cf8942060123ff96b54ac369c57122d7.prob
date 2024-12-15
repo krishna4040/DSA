@@ -1,0 +1,1 @@
+{"name":"Local: betting_game","url":"d:\\GFG_cpp\\gfg_practice\\arrays\\betting_game.cpp","tests":[{"id":1679416947512,"input":"WL","output":"4"},{"id":1679416966113,"input":"WLWLLLWWLW","output":"-1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\GFG_cpp\\gfg_practice\\arrays\\betting_game.cpp","group":"local","local":true}

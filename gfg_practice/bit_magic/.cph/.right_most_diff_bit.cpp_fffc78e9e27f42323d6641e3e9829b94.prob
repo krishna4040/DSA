@@ -1,0 +1,1 @@
+{"name":"Local: right_most_diff_bit","url":"d:\\vs_code\\gfg_practice\\bit_magic\\right_most_diff_bit.cpp","tests":[{"id":1677679560534,"input":"11 9","output":"2"},{"id":1677680798924,"input":"54 4","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\vs_code\\gfg_practice\\bit_magic\\right_most_diff_bit.cpp","group":"local","local":true}
