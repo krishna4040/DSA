@@ -5,24 +5,42 @@ struct node
 {
     int data;
     node *next;
-    node(int x) : data(x), next(NULL) {}
+    node(int x)
+    {
+        data = x;
+        next = NULL;
+    }
 };
 
-// swapping method
-node *pairWiseSwap(node *head)
+void print(node *head)
 {
     node *curr = head;
-    while (curr != NULL && curr->next != NULL)
+    while (curr != NULL)
     {
-        swap(curr->data, curr->next->data);
-        curr = curr->next->next;
+        cout << curr->data << "->";
+        curr = curr->next;
     }
-    return head;
+    return;
 }
 
-// pointer ref method
-node *pairSwap(node *head)
+node *pairwiseSwap(node *head)
 {
+    if (head == NULL || head->next == NULL)
+        return head;
+    node *curr = head->next->next;
+    node *prev = head;
+    head = head->next;
+    head->next = prev;
+    while (curr != NULL || curr->next != NULL)
+    {
+        prev->next = curr->next;
+        prev = curr;
+        node *next = curr->next->next;
+        curr->next->next = curr;
+        curr = next;
+    }
+    prev->next = curr;
+    return head;
 }
 
 int main(int argc, char const *argv[])
@@ -30,16 +48,9 @@ int main(int argc, char const *argv[])
     node *head = new node(10);
     head->next = new node(20);
     head->next->next = new node(30);
-    head->next->next->next = new node(40);
-    head->next->next->next->next = new node(50);
 
-    head = pairWiseSwap(head);
-    node *curr = head;
-    while (curr != NULL)
-    {
-        cout << curr->data << " ";
-        curr = curr->next;
-    }
+    node *l = pairwiseSwap(head);
+    print(l);
 
     return 0;
 }
