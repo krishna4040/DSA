@@ -1,1 +1,0 @@
-{"name":"Local: add_under_modulo","url":"d:\\vs_code\\gfg_practice\\add_under_modulo.cpp","tests":[{"id":1677505190242,"input":"9223372036854775807\n9223372036854775807","output":"582344006"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\vs_code\\gfg_practice\\add_under_modulo.cpp","group":"local","local":true}
