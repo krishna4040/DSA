@@ -1,2 +1,2 @@
 [MASTER]
-disable=missing-module-docstring,C0116
+disable=missing-module-docstring,C0116,C0101,E741

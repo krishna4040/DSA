@@ -312,3 +312,10 @@ def max_k_subarr_sum(arr, k):
         curr_sum += arr[i] - arr[i - k]
         res = max(res, curr_sum)
     return res
+
+
+def prefix_sum(arr):
+    res = [arr[0]]
+    for i in range(1, len(arr)):
+        res.append(res[i - 1] + arr[i])
+    return res
