@@ -249,11 +249,11 @@ def longest_even_odd(arr):
 def majority_element(arr):
     ele, count = arr[0], 1
 
-    for i in range(len(arr)):
+    for i in range(1, len(arr)):
+        count += 1 if arr[i] == ele else -1
         if count == 0:
             ele = arr[i]
             count = 1
-        count += 1 if arr[i] == ele else -1
 
     final_count = sum(1 for num in arr if num == ele)
 
