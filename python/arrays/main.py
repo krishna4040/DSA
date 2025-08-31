@@ -11,6 +11,7 @@ def search(arr, x):
 def insert(arr, x, pos):
     n = len(arr)
     idx = pos - 1
+    arr.append(None)
     for i in range(n - 1, idx + 1, -1):
         arr[i + 1] = arr[i]
     arr[idx] = x
@@ -19,14 +20,15 @@ def insert(arr, x, pos):
 
 def delete(arr, x):
     n = len(arr)
-    for i in range(0, n):
+    for i in range(n):
         if arr[i] == x:
             break
-    if i == n:
+    else:
         return n
-    for j in range(0, n):
+    for j in range(i, n - 1):
         arr[j] = arr[j + 1]
-        return n - 1
+    arr.pop()
+    return n - 1
 
 
 def max_element(arr):

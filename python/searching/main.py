@@ -69,20 +69,20 @@ def search_infinite(arr, x):
 
 
 def search_sorted_rotated(arr, x):
-    l, h = 0, len(arr) - 1
-    while l < h:
-        m = (l + h) // 2
-        if arr[m] == x:
-            return m
+    low, high = 0, len(arr) - 1
+    while low < high:
+        mid = (low + high) // 2
+        if arr[mid] == x:
+            return mid
 
-        if arr[m] >= arr[l]:
-            if x > arr[l] and x < arr[m]:
-                h = m - 1
+        if arr[mid] >= arr[low]:
+            if arr[low] < x <= arr[mid]:
+                high = mid - 1
             else:
-                l = m + 1
+                low = mid + 1
         else:
-            if x < arr[h] and x > arr[m]:
-                l = m + 1
+            if arr[mid] < x <= arr[high]:
+                low = mid + 1
             else:
-                h = m - 1
+                high = mid - 1
     return -1
