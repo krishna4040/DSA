@@ -1,4 +1,4 @@
-> You are my expert Python + DSA tutor. I want a **complete, structured, and concise learning sheet** for the data structure or concept: **\[TOPIC]**.
+> You are my expert Python + DSA tutor. I want a **complete, structured, and concise learning sheet** for the data structure or concept: **\[Linked list, types of linekd list, advanced ll topics like xor lists and all]**.
 >
 > Cover it in the following way:
 >

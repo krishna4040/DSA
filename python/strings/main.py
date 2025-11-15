@@ -161,6 +161,22 @@ def number_to_words(num):
     return " ".join(words).strip()
 
 
+def next_permutation(s):
+    i = len(s) - 2
+    while i >= 0 and s[i] >= s[i + 1]:
+        i -= 1
+    if i == -1:
+        return False
+
+    j = len(s) - 1
+    while s[i] <= s[j]:
+        j -= 1
+
+    s[i], s[j] = s[j], s[i]
+    s[i + 1 :] = reversed(s[i + 1 :])
+    return True
+
+
 def int_to_roman(num):
     # Roman numeral mapping in descending order
     val = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1]

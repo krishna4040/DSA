@@ -1,13 +1,3 @@
-Great question. Writing **clean, readable, and Pythonic** array (list) code often means:
-
-- Using **built-in functions**.
-- Using **idiomatic constructs** like `enumerate`, `zip`, comprehensions.
-- Avoiding manual loops when there's a simpler alternative.
-
-Here’s a categorized list of **common and powerful Pythonic methods, functions, and idioms** you can use with arrays:
-
----
-
 ## 🔁 Looping Idioms
 
 | Use Case                    | Idiom                                | Example                                           |

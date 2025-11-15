@@ -1,4 +1,5 @@
 import math
+from itertools import accumulate
 
 
 def search(arr, x):
@@ -317,7 +318,8 @@ def max_k_subarr_sum(arr, k):
 
 
 def prefix_sum(arr):
-    res = [arr[0]]
-    for i in range(1, len(arr)):
-        res.append(res[i - 1] + arr[i])
-    return res
+    return list(accumulate(arr))
+
+
+def suffix_sum(arr):
+    return list(accumulate(arr[::-1]))[::-1]
